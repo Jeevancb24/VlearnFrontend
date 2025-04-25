@@ -17,12 +17,12 @@ const Navigation = () => {
     setIsAuthenticated(false);
   };
   return (
-    <div className="flex">
-      <div className="drawer">
+    <div className="flex ">
+      <div className="drawer w-full">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
-          <div className="navbar bg-base-300 w-full">
+          <div className="navbar bg-base-100 w-full">
             <div className="flex-none lg:hidden">
               <label
                 htmlFor="my-drawer-3"
@@ -50,14 +50,15 @@ const Navigation = () => {
             <div className="hidden flex-none lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
+
                 <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/work">Work</Link>
+                  <Link to="/work">Learn</Link>
                 </li>
                 <li>
                   <Link to="/chat">ChatRoom</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
                   {isAuthenticated ? (
@@ -93,7 +94,7 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-      <div className="px-4 py-3 bg-black">
+      <div className="px-4 py-3 bg-base-100 rounded-lg flex items-center gap-2 ml-4">
         <label className="input">
           <svg
             className="h-[1em] opacity-50"
